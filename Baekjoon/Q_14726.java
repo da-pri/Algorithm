@@ -1,4 +1,4 @@
-package _2022_05_31;
+package Baekjoon;
 
 import java.util.*;
 
