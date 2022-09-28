@@ -6,13 +6,13 @@ public class study03 {
 
 	public static void main(String[] args) {
 		/*
-		 * 2¿¡¼­ 1000±îÁöÀÇ ¼Ò¼ö ³ª¿­ÇÏ±â
-		 * 2¿¡¼­ 1000±îÁöÀÇ ¹Ù±ù for¹®À¸·Î µ¹±â
-		 * ¾ÈÂÊ for¹®¿¡¼­ 2ºÎÅÍ ÀÚ½ÅÀÇ ¼ö -1±îÁö ³ª´©¾î¼­ ¶³¾îÁö¸é ¼Ò¼ö°¡ ¾Æ´Ï´Ù.
+		 * 2ì—ì„œ 1000ê¹Œì§€ì˜ ì†Œìˆ˜ ë‚˜ì—´í•˜ê¸°
+		 * 2ì—ì„œ 1000ê¹Œì§€ì˜ ë°”ê¹¥ forë¬¸ìœ¼ë¡œ ëŒê¸°
+		 * ì•ˆìª½ forë¬¸ì—ì„œ 2ë¶€í„° ìì‹ ì˜ ìˆ˜ -1ê¹Œì§€ ë‚˜ëˆ„ì–´ì„œ ë–¨ì–´ì§€ë©´ ì†Œìˆ˜ê°€ ì•„ë‹ˆë‹¤.
 		 */
 		method01();	
-		method02(); // È¦¼ö¸¸ °Ë»ç
-		method03(); // ÀÚ½Åº¸´Ù ÀÛÀº ¼ö 
+		method02(); // í™€ìˆ˜ë§Œ ê²€ì‚¬
+		method03(); // ìì‹ ë³´ë‹¤ ì‘ì€ ìˆ˜ 
 	}
 
 	private static void method01() {
@@ -34,7 +34,7 @@ public class study03 {
 				System.out.print(n+" ");
 			}
 		}
-		System.out.println("\n³ª´°¼À È½¼ö´Â " + count);
+		System.out.println("\në‚˜ëˆ—ì…ˆ íšŸìˆ˜ëŠ” " + count);
 	}
 	
 	private static void method02() {
@@ -56,7 +56,7 @@ public class study03 {
 				System.out.print(i+" ");
 			}
 		}
-		System.out.println("\n³ª´°¼À È½¼ö´Â " + count);
+		System.out.println("\në‚˜ëˆ—ì…ˆ íšŸìˆ˜ëŠ” " + count);
 	}
 	
 	private static void method03() {
@@ -64,10 +64,10 @@ public class study03 {
 		int i , j;
 		int count = 0;
 		boolean isPrime;
-		int[] prime = new int[500]; // ¼Ò¼ö¸¦ ÀúÀåÇÒ º¯¼ö
-		int ptr = 0;				// ÀúÀåµÈ ¼Ò¼öÀÇ °³¼ö
+		int[] prime = new int[500]; // ì†Œìˆ˜ë¥¼ ì €ì¥í•  ë³€ìˆ˜
+		int ptr = 0; // ì €ì¥ëœ ì†Œìˆ˜ì˜ ê°œìˆ˜
 		
-		prime[ptr++] = 2; // ÃÊ±â¿¡ 2¸¦ ¼Ò¼ö ¹è¿­¿¡ ³Ö´Â´Ù.
+		prime[ptr++] = 2; // ì´ˆê¸°ì— 2ë¥¼ ì†Œìˆ˜ ë°°ì—´ì— ë„£ëŠ”ë‹¤.
 		
 		for (i = 3; i < 1000; i+=2) {
 			isPrime = true;
@@ -85,7 +85,7 @@ public class study03 {
 			for (i = 0; i < ptr; i++) {
 				System.out.print(prime[i]+" ");
 			}
-		System.out.println("\n³ª´°¼À È½¼ö´Â " + count);
+		System.out.println("\në‚˜ëˆ—ì…ˆ íšŸìˆ˜ëŠ” " + count);
 		
 	}
 }
