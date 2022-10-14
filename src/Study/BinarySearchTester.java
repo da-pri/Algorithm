@@ -6,26 +6,26 @@ import java.util.Scanner;
 public class BinarySearchTester {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¿ä¼Ú¼ö: ");
+		System.out.print("ìš”ì†Ÿìˆ˜: ");
 		int num = sc.nextInt();
-		int[] x = new int[num]; // ¿ä¼Ú¼ö°¡ numÀÎ ¹è¿­
-		System.out.println("¿À¸§Â÷¼øÀ¸·Î ÀÔ·ÂÇÏ¼¼¿ä.");
-		System.out.print("x[0]: "); // ¹è¿­ÀÇ Ã¹ ¿ä¼Ò¸¦
-		x[0] = sc.nextInt(); // ¸ÕÀú ÀÔ·Â¹ŞÀ½
+		int[] x = new int[num]; // ìš”ì†Ÿìˆ˜ê°€ numì¸ ë°°ì—´
+		System.out.println("ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì…ë ¥í•˜ì„¸ìš”.");
+		System.out.print("x[0]: "); // ë°°ì—´ì˜ ì²« ìš”ì†Œë¥¼
+		x[0] = sc.nextInt(); // ë¨¼ì € ì…ë ¥ë°›ìŒ
 		for (int i = 1; i < num; i++) {
 			do {
 				System.out.print("x[" + i + "]: ");
 				x[i] = sc.nextInt();
-			} while (x[i] < x[i - 1]); // ¹Ù·Î ¾ÕÀÇ ¿ä¼Òº¸´Ù
-		} // ÀÛÀ¸¸é ´Ù½Ã ÀÔ·Â¹ŞÀ½
-		System.out.print("°Ë»ö °ª : "); // Å°°ªÀ» ÀÔ·Â¹ŞÀ½
+			} while (x[i] < x[i - 1]); // ë°”ë¡œ ì•ì˜ ìš”ì†Œë³´ë‹¤ ì‘ìœ¼ë©´ ë‹¤ì‹œ ì…ë ¥ë°›ìŒ
+		} 
+		System.out.print("ê²€ìƒ‰ ê°’ : "); // í‚¤ê°’ì„ ì…ë ¥ë°›ìŒ
 		int ky = sc.nextInt();
-		// ¹è¿­ x¿¡¼­ °ªÀÌ kyÀÎ ¿ä¼Ò¸¦ °Ë»ö
+		// ë°°ì—´ xì—ì„œ ê°’ì´ kyì¸ ìš”ì†Œë¥¼ ê²€ìƒ‰
 		int idx = Arrays.binarySearch(x, ky);
 		if (idx < 0) {
-			System.out.println("°Ë»ö °ªÀÇ ¿ä¼Ò°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ê²€ìƒ‰ ê°’ì˜ ìš”ì†Œê°€ ì—†ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("°Ë»ö °ªÀº x[" + idx + "]¿¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("ê²€ìƒ‰ ê°’ì€ x[" + idx + "]ì— ìˆìŠµë‹ˆë‹¤.");
 		}
 
 	}
