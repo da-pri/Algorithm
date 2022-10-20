@@ -34,18 +34,18 @@ public class study05 {
 		
 		int[] idx = new int[num];
 		
-		System.out.println("°Ë»ö °ª: ");
+		System.out.println("ê²€ìƒ‰ ê°’: ");
 		int ky = sc.nextInt();
 
 		int count = searchIdx(array, array.length-1, ky, idx);
-		System.out.println("°Ë»ö °³¼ö: "+count+"°³ÀÔ´Ï´Ù.");
+		System.out.println("ê²€ìƒ‰ ê°œìˆ˜: "+count+"ê°œì…ë‹ˆë‹¤.");
 		
 		if(count == 0) {
-			System.out.println("±× °ªÀÇ ¿ä¼Ò´Â Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ê·¸ ê°’ì˜ ìš”ì†ŒëŠ” ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		else {
 			for(int i = 0; i < count; i++)
-				System.out.println("±× °ªÀº"+"x["+idx[i]+"]¿¡ ÀÖ½À´Ï´Ù.");
+				System.out.println("ê·¸ ê°’ì€"+"x["+idx[i]+"]ì— ìˆìŠµë‹ˆë‹¤.");
 		}
 	}
 
