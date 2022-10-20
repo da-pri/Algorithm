@@ -5,7 +5,7 @@ import java.util.Random;
 public class study06 {
 
 	static int binarySearch(int[] a, int n, int key) {
-		// pl : ¿ÞÂÊ À§Ä¡, pr : ¿À¸¥ÂÊ À§Ä¡, pc : Áß°£ À§Ä¡
+		// pl : ì™¼ìª½ ìœ„ì¹˜, pr : ì˜¤ë¥¸ìª½ ìœ„ì¹˜, pc : ì¤‘ê°„ ìœ„ì¹˜
 		int pl, pr, pc;
 		pl = 0;
 		pr = n - 1;
@@ -33,9 +33,9 @@ public class study06 {
 			System.out.println("\n   |");
 			if (a[pc] == key) {
 				return pc;
-			} else if (a[pc] < key) { // °Ë»ö¹üÀ§°¡ ¿À¸¥ÂÊÀ¸·Î º¯°æ
+			} else if (a[pc] < key) { // ê²€ìƒ‰ë²”ìœ„ê°€ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ë³€ê²½
 				pl = pc + 1;
-			} else { // °Ë»ö¹üÀ§°¡ ¿ÞÂÊÀ¸·Î º¯°æ
+			} else { // ê²€ìƒ‰ë²”ìœ„ê°€ ì™¼ìª½ìœ¼ë¡œ ë³€ê²½
 				pr = pc - 1;
 			}
 		} while (pl <= pr);
@@ -60,11 +60,11 @@ public class study06 {
 		System.out.println();
 		int idx = Search.seqSearch(array, num, 5);
 		if (idx < 0) {
-			System.out.print("°ªÀÌ ¾ø¾î¿ä");
+			System.out.print("ê°’ì´ ì—†ì–´ìš”");
 		} else {
-			System.out.print("°ªÀÌ " + idx + "¹øÂ° ÀÖ¾î¿ä");
+			System.out.print("ê°’ì´ " + idx + "ë²ˆì§¸ ìžˆì–´ìš”");
 		}
-		System.out.println("\n ¹öºí Á¤·Ä");
+		System.out.println("\n ë²„ë¸” ì •ë ¬");
 		Search.bubbleSort(array, num);
 		for (int i = 0; i < num; i++) {
 			System.out.print("a[" + i + "]=" + array[i]);
@@ -75,7 +75,7 @@ public class study06 {
 			}
 
 		}
-		System.out.println("\n ÀÌÁø °Ë»ö");
+		System.out.println("\n ì´ì§„ ê²€ìƒ‰");
 		for (int i = 0; i < num; i++) {
 			System.out.print(array[i] + "  ");
 		}
@@ -83,9 +83,9 @@ public class study06 {
 
 		idx = binarySearch(array, num, 5);
 		if (idx < 0) {
-			System.out.print("°ªÀÌ ¾ø¾î¿ä");
+			System.out.print("ê°’ì´ ì—†ì–´ìš”");
 		} else {
-			System.out.print("°ªÀÌ " + idx + "¹øÂ° ÀÖ¾î¿ä");
+			System.out.print("ê°’ì´ " + idx + "ë²ˆì§¸ ìžˆì–´ìš”");
 		}
 
 	}
