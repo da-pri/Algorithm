@@ -27,26 +27,26 @@ public class study02 {
 
 		char[] cno = new char[32];
 
-		System.out.println("10Áø¼ö¸¦ ±â¼ö º¯È¯ÇÕ´Ï´Ù.");
+		System.out.println("10ì§„ìˆ˜ë¥¼ ê¸°ìˆ˜ ë³€í™˜í•©ë‹ˆë‹¤.");
 		do {
 			do {
-				System.out.print("º¯È¯ÇÏ´Â À½ÀÌ ¾Æ´Ñ Á¤¼ö: ");
+				System.out.print("ë³€í™˜í•˜ëŠ” ìŒì´ ì•„ë‹Œ ì •ìˆ˜: ");
 				no = sc.nextInt();
 			} while (no < 0);
 
 			do {
-				System.out.print("¾î¶² Áø¼ö·Î º¯È¯ÇÒ±î¿ä? (2-36): ");
+				System.out.print("ì–´ë–¤ ì§„ìˆ˜ë¡œ ë³€í™˜í• ê¹Œìš”> (2-36): ");
 				cd = sc.nextInt();
 			} while (cd < 2 || cd > 36);
 
 			dno = cardConv(no, cd, cno);
 
-			System.out.println(cd + "Áø¼ö·Î ");
+			System.out.println(cd + "ì§„ìˆ˜ë¡œ ");
 			for (int i = 0; i < dno; i++)
 				System.out.print(cno[i]);
-			System.out.println("ÀÔ´Ï´Ù.");
+			System.out.println("ì…ë‹ˆë‹¤.");
 
-			System.out.println("´Ù½Ã ÇÑ ¹ø ÇÒ±î¿ä? (1... ¿¹ / 2... ¾Æ´Ï¿À)");
+			System.out.println("ë‹¤ì‹œ í•œ ë²ˆ í• ê¹Œìš”? (1... ì˜ˆ / 2... ì•„ë‹ˆì˜¤)");
 			retry = sc.nextInt();
 		} while (retry == 1);
 	}
