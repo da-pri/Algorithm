@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class wdb {
 
 	static class PhyscData {
-		private String name; // ÀÌ¸§
-		int height; // Å°
-		double vision; // ½Ã·Â
+		private String name; // ì´ë¦„
+		int height; // í‚¤
+		double vision; // ì‹œë ¥
 
 		public PhyscData(String name, int height, double vision) {
 			this.name = name;
@@ -37,26 +37,26 @@ public class wdb {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		PhyscData[] x = {
-				new PhyscData("°­½Å¼º", 162, 0.3), 
-				new PhyscData("°í°ÇÈ£", 173, 0.7),
-				new PhyscData("¹ÚÁØÈ«", 171, 1.5), 
-				new PhyscData("À¯´Ù¿¬", 175, 2.0), 
-				new PhyscData("Á¶ÇöÁÖ", 168, 0.4), 
-				new PhyscData("Áø¼Ö¹Ì", 174, 1.2),
-				new PhyscData("ÇÏ¿µ¼ö", 169, 0.8),
+				new PhyscData("ê°•ì‹ ì„±", 162, 0.3), 
+				new PhyscData("ê³ ê±´í˜¸", 173, 0.7),
+				new PhyscData("ë°•ì¤€í™", 171, 1.5), 
+				new PhyscData("ìœ ë‹¤ì—°", 175, 2.0), 
+				new PhyscData("ì¡°í˜„ì£¼", 168, 0.4), 
+				new PhyscData("ì§„ì†”ë¯¸", 174, 1.2),
+				new PhyscData("í•˜ì˜ìˆ˜", 169, 0.8),
 		};
 
-		System.out.print("ÀÌ¸§ÀÌ ¾î¶² »ç¶÷À» Ã£°í ÀÖ³ª¿ä?: ");
+		System.out.print("ì´ë¦„ì´ ì–´ë–¤ ì‚¬ëŒì„ ì°¾ê³  ìˆë‚˜ìš”?: ");
 		String name = sc.next();
 		NameOrderComparator name_order = new NameOrderComparator();
 		int idx = Arrays.binarySearch(x, new PhyscData(name, 0, 0.0), name_order);
 
 		if (idx < 0) {
-			// °ªÀ» Ã£Áö ¸øÇßÀ» ¶§
-			System.out.println(" ±× °ªÀÇ ¿ä¼Ò°¡ ¾ø½À´Ï´Ù.");
-		} else { // °ªÀ» Ã£¾ÒÀ» ¶§
-			System.out.println("±× °ªÀº x[" + idx + "]¿¡ ÀÖ½À´Ï´Ù.");
-			System.out.println("Ã£Àº µ¥ÀÌÅÍ: " + x[idx]);
+			// ê°’ì„ ì°¾ì§€ ëª»í–ˆì„ ë•Œ
+			System.out.println(" ê·¸ ê°’ì˜ ìš”ì†Œê°€ ì—†ìŠµë‹ˆë‹¤.");
+		} else { // ê°’ì„ ì°¾ì•˜ì„ ë•Œ
+			System.out.println("ê·¸ ê°’ì€ x[" + idx + "]ì— ìˆìŠµë‹ˆë‹¤.");
+			System.out.println("ì°¾ì€ ë°ì´í„°: " + x[idx]);
 		}
 	}
 }
