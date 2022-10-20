@@ -3,20 +3,20 @@ package Study;
 public class study04 {
 	public static void main(String[] args) {
 		PhyscData[] x = { 
-				new PhyscData("°­¹ÎÇÏ", 162, 0.3),
-				new PhyscData("±èÂù¿ì", 173, 0.7),
-				new PhyscData("¹ÚÁØ¼­", 175, 2.0),
-				new PhyscData("À¯¼­¹ü", 171, 1.5),
-				new PhyscData("ÀÌ¼ö¿¬", 168, 0.4),
-				new PhyscData("Àå°æ¿À", 174, 1.2),
-				new PhyscData("È²Áö¾È", 169, 0.8),
+				new PhyscData("ê°•ë¯¼í•˜", 162, 0.3),
+				new PhyscData("ê¹€ì°¬ìš°", 173, 0.7),
+				new PhyscData("ë°•ì¤€ì„œ", 175, 2.0),
+				new PhyscData("ìœ ì„œë²”", 171, 1.5),
+				new PhyscData("ì´ìˆ˜ì—°", 168, 0.4),
+				new PhyscData("ì¥ê²½ì˜¤", 174, 1.2),
+				new PhyscData("í™©ì§€ì•ˆ", 169, 0.8),
 		};
 
-		// ½ÅÃ¼ µ¥ÀÌÅÍ Ãâ·Â
+		// ì‹ ì²´ ë°ì´í„° ì¶œë ¥
 		for (int i = 0; i < x.length; i++)
 			System.out.printf("%-6s%3d%5.1f\n", x[i].name, x[i].height, x[i].vision);
 
-		System.out.printf("\nÆò±Õ Å° %5.1fcm\n", aveHeight(x));
+		System.out.printf("\ní‰ê·  í‚¤ %5.1fcm\n", aveHeight(x));
 	}
 
 	private static double aveHeight(PhyscData[] dat) {
