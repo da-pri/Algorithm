@@ -22,18 +22,18 @@ public class study01 {
 
 		System.out.println(Arrays.toString(a));
 		System.out.println();
-		System.out.println("ÇÏ´Â °úÁ¤");
+		System.out.println("í•˜ëŠ” ê³¼ì •");
 		revers1(a);
 		System.out.println();
-		System.out.println("ÇÕ°è °úÁ¤");
+		System.out.println("í•©ê³„ ê³¼ì •");
 		System.out.println(sumOf(a));
 		System.out.println();
-		System.out.println("Ä«ÇÇ °úÁ¤");
+		System.out.println("ì¹´í”¼ ê³¼ì •");
 		copy(a, b);
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
 		System.out.println();
-		System.out.println("¿ª¼ø °úÁ¤");
+		System.out.println("ì—­ìˆœ ê³¼ì •");
 		rcopy(a, b);
 		System.out.println(Arrays.toString(a));
 		System.out.println(Arrays.toString(b));
