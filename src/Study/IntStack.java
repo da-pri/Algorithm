@@ -51,7 +51,7 @@ public class IntStack {
 	
 	public void dump() {
 		if(ptr <= 0)
-			System.out.println("stackÀÌ ºñ¾îÀÖ½À´Ï´Ù.");
+			System.out.println("stackì´ ë¹„ì–´ìžˆìŠµë‹ˆë‹¤.");
 		else {
 			for (int i = 0; i < ptr; i++) {
 				System.out.print(stk[i]+"");
@@ -66,7 +66,7 @@ public class IntStack {
 		for (;;) {
 
 			Scanner sc = new Scanner(System.in);
-			System.out.print("(1)Çª½Ã (2)ÆË (3)ÇÇÅ© (0)Á¾·á, ¼±ÅÃÇÏ¼¼¿ä : ");
+			System.out.print("(1)í‘¸ì‹œ (2)íŒ (3)í”¼í¬ (0)ì¢…ë£Œ, ì„ íƒí•˜ì„¸ìš” : ");
 			int menu = sc.nextInt();
 			int x = 0;
 
@@ -75,24 +75,24 @@ public class IntStack {
 
 			switch (menu) {
 			case 1:
-				System.out.print("µ¥ÀÌÅÍ: ");
+				System.out.print("ë°ì´í„°: ");
 				x = sc.nextInt();
 				stack.push(x);
 				break;
 			case 2:
 				try {
 					x = stack.pop();
-					System.out.println("popÇÑ µ¥ÀÌÅÍ´Â " + x + "ÀÔ´Ï´Ù.");
+					System.out.println("popí•œ ë°ì´í„°ëŠ” " + x + "ìž…ë‹ˆë‹¤.");
 				} catch (EmptyIntStackException e) {
 					e.printStackTrace();
-					System.out.println("stackÀÌ ºñ¾î ÀÖ¾î¼­ pop¸¦ ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+					System.out.println("stackì´ ë¹„ì–´ ìžˆì–´ì„œ popë¥¼ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 				} break;
 			case 3:
 				try {
 					x = stack.peek();
-					System.out.println("peekÇÑ µ¥ÀÌÅÍ´Â " + x + "ÀÔ´Ï´Ù.");
+					System.out.println("peekí•œ ë°ì´í„°ëŠ” " + x + "ìž…ë‹ˆë‹¤.");
 				} catch (EmptyIntStackException e) {
-					System.out.println("stackÀÌ ºñ¾î ÀÖ¾î¼­ peek¸¦ ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+					System.out.println("stackì´ ë¹„ì–´ ìžˆì–´ì„œ peekë¥¼ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 					e.printStackTrace();
 				}
 				break;
