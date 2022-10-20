@@ -6,11 +6,11 @@ public class study00 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		// nÀ» ÀÔ·Â ¹Ş´Â´Ù.
-		System.out.print("nÀ» ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		// n ì…ë ¥ì„ ë°›ëŠ”ë‹¤.
+		System.out.print("nì„ ì…ë ¥í•´ ì£¼ì„¸ìš” : ");
 		int n = sc.nextInt();
 
-		System.out.println("Á÷°¢»ï°¢Çü");
+		System.out.println("ì§ê°ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  *");
 			for (int j = 0; j < i; j++) {
@@ -18,7 +18,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("°Å²Ù·Î Á÷°¢»ï°¢Çü");
+		System.out.println("ê±°ê¾¸ë¡œ ì§ê°ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  *");
 			for (int j = 0; j < n - i - 1; j++) {
@@ -26,7 +26,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("±æ¾îÁø Á÷°¢»ï°¢Çü");
+		System.out.println("ê¸¸ì–´ì§„ ì§ê°ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  *");
 			for (int j = 0; j < i * 2; j++) {
@@ -34,7 +34,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("°Å²Ù·Î ±æ¾îÁø Á÷°¢»ï°¢Çü");
+		System.out.println("ê±°ê¾¸ë¡œ ê¸¸ì–´ì§„ ì§ê°ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  *");
 			for (int j = 0; j < (n - i - 1) * 2; j++) {
@@ -42,7 +42,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("Á¤»ï°¢Çü");
+		System.out.println("ì •ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  ");
 			for (int j = 0; j < n - i - 1; j++) {
@@ -53,7 +53,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("°Å²Ù·Î Á¤»ï°¢Çü");
+		System.out.println("ê±°ê¾¸ë¡œ ì •ì‚¼ê°í˜•");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  ");
 			for (int j = 0; j < i; j++) {
@@ -64,7 +64,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("¸¶¸§¸ğ");
+		System.out.println("ë§ˆë¦„ëª¨");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  ");
 			for (int j = 0; j < n - i - 1; j++) {
@@ -85,7 +85,7 @@ public class study00 {
 			}
 			System.out.println();
 		}
-		System.out.println("¸¶¸§¸ğ µÎ °³");
+		System.out.println("ë§ˆë¦„ëª¨ ë‘ ê°œ");
 		for (int i = 0; i < n; i++) {
 			System.out.print(i + "  ");
 			for (int j = 0; j < n - i - 1; j++) {
